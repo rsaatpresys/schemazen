@@ -1049,6 +1049,7 @@ where name = @dbname
 			}
 			foreach (Table t in DataTables) {
 				StreamWriter sw = File.CreateText(dataDir + "/" + MakeFileName(t) + ".tsv");
+				Console.WriteLine("Export Data:" + t.Name);
 				t.ExportData(Connection, sw, tableHint);
 				sw.Flush();
 				sw.Close();
