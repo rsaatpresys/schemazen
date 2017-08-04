@@ -18,6 +18,7 @@ namespace SchemaZen.console {
 				if (Debugger.IsAttached)
 					ConsoleQuestion.WaitForKeyPress();
 #endif
+				ConsoleQuestion.WaitForKeyPress();
 			}
 		}
 
